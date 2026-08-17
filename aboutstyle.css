@@ -1,0 +1,672 @@
+css
+/* =====================================================
+   KINGSMEN RESTAURANT
+   ABOUT PAGE STYLE
+   Matches the Contact Page Design
+===================================================== */
+
+
+/* =========================
+   GENERAL
+========================= */
+
+.about-page {
+    margin: 0;
+    padding: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #09a1cb;
+
+    color: #222;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.about-page header {
+    width: 100%;
+
+    min-height: 80px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 10px 7%;
+
+    background: #000000;
+
+    box-sizing: border-box;
+
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+/* LOGO */
+
+.about-page .logo {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+.about-page .brandlogo {
+    width: 55px;
+
+    height: 55px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 2px solid rgb(4, 187, 200);
+}
+
+.about-page .logo h2 {
+    color: rgb(4, 187, 200);
+
+    margin: 0;
+
+    font-size: 21px;
+
+    letter-spacing: 2px;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.about-page .nav-link ul {
+    display: flex;
+
+    align-items: center;
+
+    gap: 5px;
+
+    list-style: none;
+
+    margin: 0;
+
+    padding: 0;
+}
+
+.about-page .nav-link ul li a {
+    color: #107a92;
+
+    text-decoration: none;
+
+    padding: 12px 15px;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    transition: 0.3s ease;
+}
+
+.about-page .nav-link ul li a:hover {
+    color: rgb(4, 187, 200);
+}
+
+
+/* ACTIVE ABOUT LINK */
+
+.about-page .nav-link ul li a.active {
+    color: rgb(4, 187, 200);
+}
+
+
+/* =========================
+   ABOUT SECTION
+========================= */
+
+.about-section {
+    width: 100%;
+
+    padding: 80px 20px;
+
+    background: #0a7e8f;
+
+    box-sizing: border-box;
+}
+
+.about-section .container {
+    width: 90%;
+
+    max-width: 1100px;
+
+    margin: auto;
+}
+
+
+/* =========================
+   ABOUT CONTENT
+========================= */
+
+.about-content {
+    text-align: center;
+
+    background: #ffffff;
+
+    padding: 50px;
+
+    border-radius: 10px;
+
+    border: 1px solid #dddddd;
+
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+
+/* TITLE */
+
+.about-content h1 {
+    margin-bottom: 25px;
+
+    color: #111111;
+
+    font-size: 40px;
+}
+
+.about-content h1::after {
+    content: "";
+
+    display: block;
+
+    width: 65px;
+
+    height: 3px;
+
+    background: rgb(4, 187, 200);
+
+    margin: 12px auto 0;
+}
+
+
+/* PARAGRAPHS */
+
+.about-content > p {
+    max-width: 900px;
+
+    margin: 0 auto 18px;
+
+    color: #555555;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+}
+
+.about-content strong {
+    color: rgb(4, 187, 200);
+}
+
+
+/* =========================
+   MISSION & VISION
+========================= */
+
+.about-box {
+    margin-top: 30px;
+
+    padding: 30px;
+
+    background: #f5f5f5;
+
+    border-left: 5px solid rgb(4, 187, 200);
+
+    border-radius: 7px;
+
+    text-align: left;
+
+    transition: 0.3s ease;
+}
+
+.about-box:hover {
+    transform: translateY(-4px);
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.about-box h2 {
+    margin-bottom: 10px;
+
+    color: rgb(4, 187, 200);
+
+    font-size: 24px;
+}
+
+.about-box p {
+    color: #555555;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================
+   WHY CHOOSE US
+========================= */
+
+.why-us {
+    margin-top: 40px;
+
+    padding: 35px;
+
+    background: #f5f5f5;
+
+    border-radius: 8px;
+
+    border: 1px solid #dddddd;
+}
+
+.why-us h2 {
+    margin-bottom: 25px;
+
+    color: #111111;
+
+    font-size: 27px;
+}
+
+
+/* LIST */
+
+.why-us ul {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 15px;
+
+    list-style: none;
+
+    margin: 0;
+
+    padding: 0;
+}
+
+
+/* LIST ITEM */
+
+.why-us li {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 15px;
+
+    background: #ffffff;
+
+    border: 1px solid #dddddd;
+
+    border-radius: 6px;
+
+    text-align: left;
+
+    color: #444444;
+
+    transition: 0.3s ease;
+}
+
+.why-us li:hover {
+    border-color: rgb(4, 187, 200);
+
+    transform: translateY(-3px);
+}
+
+
+/* CHECK ICON */
+
+.why-us li i {
+    width: 30px;
+
+    height: 30px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    background: rgb(4, 187, 200);
+
+    color: #ffffff;
+
+    border-radius: 50%;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.about-button {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+
+    margin-top: 35px;
+}
+
+.about-button .btn {
+    display: inline-block;
+
+    padding: 13px 25px;
+
+    background: #000000;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    border-radius: 5px;
+
+    border: 2px solid #000000;
+
+    font-weight: bold;
+
+    transition: 0.3s ease;
+}
+
+.about-button .btn:hover {
+    background: rgb(4, 187, 200);
+
+    border-color: rgb(4, 187, 200);
+
+    transform: translateY(-3px);
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.about-page .footer {
+    width: 100%;
+
+    background: #000000;
+
+    color: #ffffff;
+
+    padding: 65px 20px 25px;
+
+    box-sizing: border-box;
+}
+
+
+.about-page .footer .container {
+    width: 90%;
+
+    max-width: 1100px;
+
+    margin: auto;
+}
+
+
+/* FOOTER GRID */
+
+.about-page .footer-content {
+    display: grid;
+
+    grid-template-columns: 1.4fr 1fr 1fr;
+
+    gap: 45px;
+}
+
+
+/* FOOTER HEADINGS */
+
+.about-page .footer-section h3 {
+    color: rgb(4, 187, 200);
+
+    margin-bottom: 18px;
+
+    font-size: 19px;
+}
+
+
+/* FOOTER TEXT */
+
+.about-page .footer-section p {
+    color: #cccccc;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+
+    margin-bottom: 10px;
+}
+
+
+/* FOOTER ICONS */
+
+.about-page .footer-section p i {
+    color: rgb(4, 187, 200);
+
+    width: 25px;
+}
+
+
+/* FOOTER EMAIL */
+
+.about-page .footer-section p a {
+    color: #cccccc;
+
+    text-decoration: none;
+
+    transition: 0.3s ease;
+}
+
+.about-page .footer-section p a:hover {
+    color: rgb(4, 187, 200);
+}
+
+
+/* =========================
+   SOCIAL ICONS
+========================= */
+
+.about-page .social-icons {
+    display: flex;
+
+    gap: 10px;
+
+    margin-top: 20px;
+}
+
+.about-page .social-icons a {
+    width: 40px;
+
+    height: 40px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #151515;
+
+    color: #ffffff;
+
+    border: 1px solid #333333;
+
+    border-radius: 50%;
+
+    text-decoration: none;
+
+    transition: 0.3s ease;
+}
+
+.about-page .social-icons a:hover {
+    background: rgb(4, 187, 200);
+
+    border-color: rgb(4, 187, 200);
+
+    transform: translateY(-4px);
+}
+
+
+/* =========================
+   FOOTER ORDER BUTTON
+========================= */
+
+.about-page .footer .btn {
+    display: inline-block;
+
+    margin-top: 10px;
+
+    padding: 11px 22px;
+
+    background: rgb(4, 187, 200);
+
+    color: #ffffff;
+
+    border: 2px solid rgb(4, 187, 200);
+
+    border-radius: 5px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s ease;
+}
+
+.about-page .footer .btn:hover {
+    background: transparent;
+
+    color: rgb(4, 187, 200);
+}
+
+
+/* =========================
+   FOOTER LINE
+========================= */
+
+.about-page .footer-line {
+    border: none;
+
+    border-top: 1px solid #333333;
+
+    margin: 40px 0 20px;
+}
+
+
+/* COPYRIGHT */
+
+.about-page .copy {
+    color: #888888;
+
+    text-align: center;
+
+    font-size: 13px;
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 700px) {
+
+    .about-page header {
+        flex-direction: column;
+
+        gap: 15px;
+
+        padding: 15px;
+    }
+
+
+    .about-page .nav-link ul {
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+
+    .about-page .nav-link ul li a {
+        padding: 8px 9px;
+
+        font-size: 10px;
+    }
+
+
+    .about-section {
+        padding: 50px 12px;
+    }
+
+
+    .about-section .container {
+        width: 100%;
+    }
+
+
+    .about-content {
+        padding: 30px 18px;
+    }
+
+
+    .about-content h1 {
+        font-size: 30px;
+    }
+
+
+    .about-content > p {
+        text-align: left;
+
+        font-size: 15px;
+    }
+
+
+    .about-box {
+        padding: 25px 20px;
+    }
+
+
+    .why-us {
+        padding: 25px 15px;
+    }
+
+
+    .why-us ul {
+        grid-template-columns: 1fr;
+    }
+
+
+    .about-button {
+        flex-direction: column;
+    }
+
+
+    .about-button .btn {
+        width: 100%;
+    }
+
+
+    .about-page .footer-content {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+}
+
