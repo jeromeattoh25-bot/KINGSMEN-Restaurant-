@@ -25,72 +25,7 @@ body {
    HEADER
 ========================= */
 
-header{
-    background-color: black;
-    color: aqua;
-    padding: 1rem 2rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1rem;
-    height: 100px;
 
-}
-/* brandlogo  */
-header .brandlogo{
-    height: 60px;
-    width: 60px;
-    border-radius: 50px;
-
-}
-header .nav-link ul{
-    list-style: none;
-    display: flex;
-    margin: 30px;
-
-}
-header .nav-link ul a{
-    margin-left: 20px;
-    text-decoration: 20px;
-    font-size: 16px;
-    font-weight: bold;
-
-}
-header .nav-link ul a{
-    color: aqua;
-}
-.mycarousel{
-    max-width: 700px;
-    margin: auto;
-    
-
-}
-img{
-    margin-top:10%;
-    width: 400px;
-    height: 400px;
-
-}
-p{
-    color: rgb(32, 32, 33)
-
-
-    
-}
-h5{
-    color: rgb(227, 229, 234)
-}
-
-
-
-
-img{
-    margin-top:10%;
-    width:400px;
-    height:500px;
-    
-}
 
 
 
@@ -504,31 +439,7 @@ img{
 
     /* HEADER */
 
-    header {
-
-        flex-direction: column;
-
-        gap: 15px;
-
-        padding: 15px;
-    }
-
-
-    /* NAVIGATION */
-
-    .nav-link ul {
-
-        flex-wrap: wrap;
-
-        justify-content: center;
-    }
-
-    .nav-link ul li a {
-
-        padding: 8px 9px;
-
-        font-size: 10px;
-    }
+    
 
 
     /* CONTACT */
@@ -566,6 +477,19 @@ img{
         gap: 35px;
     }
 
+}
+/* mobile */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 8%;
+    position: relative;
+}
+.burger{
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
 }
 
 
@@ -614,183 +538,4 @@ img{
 }
 .burger{
      margin-left: auto;
-}
-/* =========================================
-   MOBILE NAVIGATION
-========================================= */
-
-@media screen and (max-width: 768px) {
-
-    /* Header */
-    header {
-        height: 100px;
-        background-color: #000000;
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 5px 20px;
-        z-index: 9999;
-    }
-
-
-    /* =========================
-       LOGO LEFT
-    ========================= */
-
-    .logo {
-        position: absolute;
-        left: 15px;
-        top: 8px;
-        z-index: 10001;
-    }
-
-    .brandlogo {
-        width: 65px;
-        height: 65px;
-        object-fit: contain;
-        border-radius: 50%;
-    }
-
-
-    /* =========================
-       HAMBURGER
-    ========================= */
-
-    .burger {
-        display: block;
-        position: absolute;
-        right: 20px;
-        top: 23px;
-
-        color: aqua;
-        font-size: 30px;
-
-        cursor: pointer;
-        z-index: 10000;
-    }
-
-
-    /* =========================
-       FULL SCREEN MENU
-    ========================= */
-
-    .nav-link {
-        position: fixed;
-
-        top: 0;
-        left: 0;
-
-        width: 100%;
-        height: 100vh;
-
-        background-color: #000000;
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-
-        transform: translateX(100%);
-
-        transition: transform 0.35s ease;
-
-        z-index: 10000;
-    }
-
-
-    /* Open menu */
-
-    .nav-link.active {
-        transform: translateX(0);
-    }
-
-
-    /* =========================
-       CLOSE X
-    ========================= */
-
-    .close-menu {
-        position: absolute;
-
-        top: 30px;
-        right: 25px;
-
-        color: aqua;
-
-        font-size: 38px;
-
-        cursor: pointer;
-    }
-
-
-    /* =========================
-       NAVIGATION LIST
-    ========================= */
-
-    .nav-link ul {
-        width: 65%;
-
-        margin: 0;
-        padding: 0;
-
-        list-style: none;
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-
-    /* Each menu item */
-
-    .nav-link ul li {
-        width: 300px;
-
-        text-align: center;
-
-        border-bottom: 1px solid white;
-    }
-
-
-    /* Links */
-
-    .nav-link ul li a {
-        display: block;
-
-        width: 100%;
-
-        padding: 25px 10px;
-
-        color: aqua;
-
-        text-decoration: none;
-
-        font-size: 22px;
-
-        font-weight: bold;
-
-        letter-spacing: 1px;
-    }
-
-
-    /* Hover */
-
-    .nav-link ul li a:hover {
-        color: white;
-    }
-
-
-    /* Contact page */
-
-    .contact-section {
-        padding: 50px 20px;
-        text-align: center;
-    }
-
-
-    .contact-info p {
-        margin: 20px 0;
-    }
-
 }
