@@ -1,0 +1,207 @@
+<!-- Header -->
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="pivture/3906 copy.jpg" type="image/x-icon">
+        <title>PRODUCT</title>
+        <link rel="stylesheet" href="productstyle.css">
+     <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        
+    </body>
+    
+    <header>
+        
+    <div class="logo">
+        <img src="pivture/3906 copy.jpg" alt="Kingsmen Restaurant Logo" class="brandlogo">
+        
+    </div>
+
+     <!-- Humburger -->
+       <div class="burger" onclick="toggleMenu()"> 
+        <i class="fas fa-bars"></i>
+        </div>
+    
+
+
+     <div class="nav-link">
+        <ul>
+            <a href="index.html"><li>HOME</li></a>
+            <li><a href="product.html">PRODUCT</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    
+     </div>
+           
+            <div class="cart-icon" id="cartIconBtn">
+            🛒 Cart <span class="cart-count" id="cartCountBadge">0</span>
+        </div>
+</header>
+
+    
+</head>
+
+<!-- Products Grid -->
+        <div class="products-container" id="productsContainer">
+        <!-- product cards will be injected via JS with full dataset -->
+        </div>
+
+    <!-- Cart Sidebar -->
+    <div class="overlay" id="cartOverlay"></div>
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Your Cart 🛍️</h3>
+            <button class="close-cart" id="closeCartBtn">&times;</button>
+        </div>
+        <div class="cart-items" id="cartItemsList">
+            <div class="empty-cart-msg">Cart is empty</div>
+        </div>
+        <div class="cart-total" id="cartTotalPrice">Total: ₵0</div>
+        <button class="checkout-cart-btn" id="proceedCheckoutFromCart">Proceed to Checkout</button>
+    </div>
+
+
+
+
+            <!-- form fill -->
+
+            <div id="purchaseForm" class="purchase-form">    
+        <h2>Complete your Purchase</h2>
+        <div class="product-sumary">
+            <img id="selectedProductImage" src="" alt="selected product">
+            
+            <div>
+                <h3 id="selectedProductName"></h3>
+                <p id="selectedProductPrice"></p>
+            </div>
+        </div>
+        <form id="checkoutForm">
+            <div class="form-group"><label>full name</label><input type="text" id="name" required></div>
+            <div class="form-group"><label>Email</label><input type="email" id="email" required></div>
+            <div class="form-group"><label>Location</label><input type="text" id="address" required></div>
+            <div class="form-group"><label>number</label><input type="tel" id="phone" required></div>
+            <button type="submit" class="submit-btn">Send Order via Email</button>
+        </form>
+        <div class="email-instructions"><h3>How it Works</h3><p>Clicking send opens your email client. Review & send to place order.</p></div>
+    </div>
+    <div id="thankYou" class="thank-you">
+        <h2>✅ Thank You For Your Purchase</h2>
+        <p>Your order email has been prepared. Please check your email client and click send.</p>
+    </div>
+
+
+   
+
+
+
+
+
+
+
+
+
+<!-- ===========================
+     FOOTER
+=========================== -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+
+            <!-- About -->
+            <div class="footer-section">
+                <h3>KINGSMEN Restaurant</h3>
+                <p>
+                    Bringing the authentic taste of Ghana to everyone while making
+                    delicious meals affordable for all.
+                </p>
+
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/share/19V7PGTX1E/" target="_blank">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/jeromeattoh?igsh=ZjFldG5oeGpydnE3" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="https://x.com/jeromeattoh" target="_blank">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+
+                    <a href="https://wa.me/233209892234" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    <a href="https://www.tiktok.com/@jeromeattoh25gmail.com?_r=1&_t=ZS-98NhcYcMxFA" target="_blank">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Contact -->
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+
+                <p>
+                    <i class="fas fa-map-marker-alt"></i>
+                    Agege, Accra, Ghana
+                </p>
+
+                <p>
+                    <i class="fas fa-phone"></i>
+                    +233 20 989 2234
+                </p>
+
+                <p>
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:jeromeattoh25@gmail.com">
+                        jeromeattoh25@gmail.com
+                    </a>
+                </p>
+            </div>
+
+            <!-- Opening Hours -->
+            <div class="footer-section">
+                <h3>Opening Hours</h3>
+
+                <p>Monday – Saturday: 10:00 AM – 8:00 PM</p>
+                <p>Sunday: 11:00 AM – 6:00 PM</p>
+
+                <button class="btn" style="margin-top:15px;">
+                    Order Now
+                </button>
+            </div>
+
+        </div>
+
+        <hr class="footer-line">
+
+        <div class="year">
+            <p class="copy">
+                &copy; <span id="year"></span> KINGSMEN Restaurant. All Rights Reserved.
+            </p>
+        </div>
+    </div>
+    
+    
+</footer>
+
+<script>
+    // Display current year automatically
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+<script src="burgericon.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="product.js"></script>
+
+       
+</body>
+</html>
