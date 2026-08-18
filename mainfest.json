@@ -3,7 +3,7 @@
   "short_name": "Kingsmen",
   "description": "KINGSMEN Restaurant is your destination for delicious Ghanaian meals, quality food, affordable prices, and excellent customer service. We are dedicated to providing tasty meals in a clean, comfortable, and welcoming environment for everyone.",
   "start_url": "./",
-  "scope": "/",
+  "scope": "./",
   "display": "standalone",
   "orientation": "portrait-primary",
   "theme_color": "#04bbc8",
